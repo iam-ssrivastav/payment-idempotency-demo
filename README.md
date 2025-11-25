@@ -7,7 +7,7 @@ This project demonstrates **Idempotency** for payment processing using Spring Bo
 ```mermaid
 flowchart LR
     A[Client] -->|POST with Idempotency-Key| B[PaymentController]
-    B -->|@Idempotent| C[IdempotencyAspect]
+    B -->|Idempotent Annotation| C[IdempotencyAspect]
     C -->|Check Key| D[IdempotencyService]
     D <-->|Get/Set| E[(Redis)]
     C -->|Key Exists| F[Return Cached Response]
