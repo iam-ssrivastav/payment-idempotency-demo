@@ -5,6 +5,11 @@ import jakarta.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
+/**
+ * Payment entity representing a payment transaction.
+ * 
+ * @author Shivam Srivastav
+ */
 @Entity
 @Table(name = "payments")
 public class Payment {

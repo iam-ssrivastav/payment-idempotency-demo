@@ -10,6 +10,12 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDateTime;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * Service for managing idempotency keys in Redis.
+ * Handles caching and retrieval of idempotent responses.
+ * 
+ * @author Shivam Srivastav
+ */
 @Service
 public class IdempotencyService {
 

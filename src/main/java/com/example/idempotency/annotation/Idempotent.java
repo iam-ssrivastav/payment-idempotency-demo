@@ -5,6 +5,12 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
+/**
+ * Custom annotation to mark methods as idempotent.
+ * Prevents duplicate execution of the same request.
+ * 
+ * @author Shivam Srivastav
+ */
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Idempotent {

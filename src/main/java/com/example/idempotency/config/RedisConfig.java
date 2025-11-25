@@ -9,6 +9,12 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 
+/**
+ * Redis configuration for idempotency key storage.
+ * Configures JSON serialization for storing complex objects.
+ * 
+ * @author Shivam Srivastav
+ */
 @Configuration
 public class RedisConfig {
 

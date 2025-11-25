@@ -9,6 +9,11 @@ import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Global exception handler for idempotency-related errors.
+ * 
+ * @author Shivam Srivastav
+ */
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 

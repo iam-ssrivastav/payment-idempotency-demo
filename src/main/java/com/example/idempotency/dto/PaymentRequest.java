@@ -2,6 +2,11 @@ package com.example.idempotency.dto;
 
 import java.math.BigDecimal;
 
+/**
+ * DTO for payment creation requests.
+ * 
+ * @author Shivam Srivastav
+ */
 public class PaymentRequest {
     private BigDecimal amount;
     private String currency;

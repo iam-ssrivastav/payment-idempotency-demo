@@ -3,6 +3,11 @@ package com.example.idempotency.dto;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
+/**
+ * DTO for payment responses.
+ * 
+ * @author Shivam Srivastav
+ */
 public class PaymentResponse {
     private Long id;
     private BigDecimal amount;

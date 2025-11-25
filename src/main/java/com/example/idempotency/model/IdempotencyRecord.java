@@ -3,6 +3,11 @@ package com.example.idempotency.model;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
+/**
+ * Model for storing idempotency records in Redis.
+ * 
+ * @author Shivam Srivastav
+ */
 public class IdempotencyRecord implements Serializable {
     private String key;
     private String requestHash;

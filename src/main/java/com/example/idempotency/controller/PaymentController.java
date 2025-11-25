@@ -11,6 +11,12 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/**
+ * REST controller for payment operations.
+ * Demonstrates idempotent payment processing.
+ * 
+ * @author Shivam Srivastav
+ */
 @RestController
 @RequestMapping("/api/payments")
 public class PaymentController {

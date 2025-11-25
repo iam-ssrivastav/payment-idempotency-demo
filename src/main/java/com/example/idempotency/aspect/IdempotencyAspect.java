@@ -16,6 +16,12 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
+/**
+ * AOP Aspect that intercepts methods annotated with @Idempotent.
+ * Checks Redis for duplicate requests and returns cached responses.
+ * 
+ * @author Shivam Srivastav
+ */
 @Aspect
 @Component
 public class IdempotencyAspect {
